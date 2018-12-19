@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>甜甜圈动画样式</title>
+</head>
+<style lang="less">
+    /*甜甜圈动画样式*/
+    .donut {
+        border: 4px solid transparent;
+        border-top-color: blueviolet;
+        border-left-color: blueviolet;
+        border-bottom-color: blueviolet;
+        height: 36px;
+        width: 36px;
+        margin: 50px auto;
+        position: relative;
+        border-radius: 50%;
+        -webkit-animation: mint-spinner-rotate 1.5s infinite linear;
+        animation: mint-spinner-rotate 1.5s infinite linear;
+    }
+
+    @-webkit-keyframes mint-spinner-rotate {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+        }
+    }
+
+    @keyframes mint-spinner-rotate {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+        }
+    }
+</style>
+<body>
+<!--甜甜圈动画-->
+<div class="donut"></div>
+</body>
+</html>
